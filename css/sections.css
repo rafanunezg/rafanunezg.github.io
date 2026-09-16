@@ -1,0 +1,134 @@
+/*==================================================
+    SECTIONS.CSS
+==================================================*/
+
+/* HOME */
+#home{display:flex;align-items:center;justify-content:center;}
+#home h2{font-size:56px;margin-bottom:20px;}
+#home p{font-size:22px;max-width:700px;margin-bottom:30px;}
+
+/* ABOUT, RESUME, SKILLS, PORTFOLIO, CONTACT */
+#about .card, #skills .card, #portfolio .card, #contact .card{margin-top:30px;}
+#resume .card{margin-top:25px;margin-bottom:30px;}
+
+/* Efecto de entrada */
+.section{opacity:1;transform:translateY(0);transition:.5s ease;}
+
+/*=========================================
+    HERO
+=========================================*/
+.hero{display:flex;align-items:center;justify-content:space-between;gap:60px;min-height:80vh;}
+.hero-text{flex:1;}
+.hero-text h3{font-size:24px;color:var(--color-primary);margin-bottom:10px;}
+.hero-text h1{font-size:64px;color:var(--color-title);margin-bottom:15px;}
+.hero-text h2{font-size:32px;color:var(--color-text-light);margin-bottom:25px;min-height:40px;}
+.hero-text p{max-width:650px;font-size:16px;margin-bottom:35px;line-height:1.8;}
+.hero-buttons{display:flex;gap:20px;}
+.btn.secondary{background:transparent;border:2px solid var(--color-primary);color:var(--color-primary);}
+.btn.secondary:hover{background:var(--color-primary);color:#111;}
+.hero-image{flex:1;display:flex;justify-content:center;}
+.hero-image img{width:350px;height:350px;object-fit:cover;border-radius:50%;border:6px solid var(--color-primary);box-shadow:0 0 20px rgba(0,201,167,.3),0 0 50px rgba(0,201,167,.15);animation:floating 4s ease-in-out infinite;}
+#typing{color:var(--color-primary);}
+.about-card p{margin-bottom:20px;font-size:16px;line-height:1.9;text-align:justify;}
+
+/*=========================================
+    TIMELINE EXPERIENCIA
+=========================================*/
+.timeline{position:relative;margin-top:40px;padding-left:30px;}
+.timeline::before{content:"";position:absolute;left:10px;top:0;width:3px;height:100%;background:var(--color-primary);}
+.timeline-item{position:relative;margin-bottom:40px;}
+.timeline-dot{position:absolute;left:-27px;top:10px;width:18px;height:18px;background:var(--color-primary);border-radius:50%;border:4px solid var(--color-background);}
+.timeline-content{background:var(--color-card);padding:25px;border-radius:var(--radius-medium);border:1px solid var(--color-border);box-shadow:var(--shadow-small);}
+.timeline-content h3{color:var(--color-title);font-size:22px;margin-bottom:8px;}
+.timeline-content span{color:var(--color-primary);font-size:14px;}
+.timeline-content p{margin-top:15px;text-align:justify;}
+
+/*=========================================
+    SKILLS
+=========================================*/
+.skills-container{margin-top:40px;}
+.skill{margin-bottom:30px;}
+.skill-info{display:flex;justify-content:space-between;margin-bottom:10px;color:var(--color-text);font-size:16px;}
+.skill-bar{width:100%;height:12px;background:var(--color-border);border-radius:20px;overflow:hidden;}
+.skill-progress{height:100%;background:var(--color-primary);border-radius:20px;animation:progressAnimation 1.5s ease;}
+@keyframes progressAnimation{from{width:0;}}
+
+/*=========================================
+    PORTFOLIO
+=========================================*/
+.portfolio-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:25px;margin-top:40px;}
+.portfolio-item{background:var(--color-card);padding:30px;border-radius:var(--radius-medium);border:1px solid var(--color-border);transition:var(--transition-normal);}
+.portfolio-item:hover{transform:translateY(-8px);box-shadow:var(--shadow-medium);}
+.portfolio-icon{width:60px;height:60px;display:flex;align-items:center;justify-content:center;background:var(--color-primary);color:#111;border-radius:50%;font-size:25px;margin-bottom:20px;}
+.portfolio-item h3{color:var(--color-title);margin-bottom:15px;font-size:22px;}
+.portfolio-item p{color:var(--color-text-light);line-height:1.7;text-align:justify;}
+
+/*=========================================
+    CONTACTO
+=========================================*/
+.contact-container{margin-top:40px;display:flex;flex-direction:column;gap:20px;}
+.contact-item{display:flex;align-items:center;gap:25px;background:var(--color-card);padding:25px;border-radius:var(--radius-medium);border:1px solid var(--color-border);transition:var(--transition-normal);}
+.contact-item:hover{transform:translateX(10px);border-color:var(--color-primary);}
+.contact-item i{width:55px;height:55px;display:flex;align-items:center;justify-content:center;background:var(--color-primary);color:#111;border-radius:50%;font-size:22px;}
+.contact-item h3{color:var(--color-title);margin-bottom:5px;}
+.contact-item p{color:var(--color-text-light);}
+
+/* Botón galería proyectos */
+.project-button{display:inline-flex;align-items:center;gap:8px;margin-top:20px;padding:10px 22px;background:var(--color-primary);color:white;border-radius:25px;text-decoration:none;font-size:14px;font-weight:600;transition:0.3s ease;}
+.project-button:hover{transform:translateY(-3px);box-shadow:var(--shadow-medium);opacity:0.85;}
+
+/*==================================================
+    MENÚ FLOTANTE
+==================================================*/
+.floating-contact{position:fixed;bottom:30px;right:30px;z-index:9999;}
+.floating-main{width:65px;height:65px;border:none;border-radius:50%;background:#25D366;color:#fff;font-size:28px;cursor:pointer;box-shadow:0 8px 25px rgba(0,0,0,.25);transition:.3s;}
+.floating-main:hover{transform:scale(1.08);}
+.floating-menu{position:absolute;bottom:80px;right:0;width:230px;background:var(--color-secondary);border:1px solid var(--color-border);border-radius:15px;box-shadow:var(--shadow-medium);overflow:hidden;opacity:0;visibility:hidden;transform:translateY(20px);transition:.30s ease;}
+.floating-menu.active{opacity:1;visibility:visible;transform:translateY(0);}
+.menu-item{display:flex;align-items:center;gap:12px;padding:15px 18px;text-decoration:none;color:var(--color-text);transition:.3s;}
+.menu-item:hover{background:var(--color-primary);color:#fff;}
+.menu-item i{width:20px;text-align:center;}
+
+/*==================================================
+    ASISTENTE VIRTUAL
+==================================================*/
+.assistant-window{position:fixed;bottom:110px;right:30px;width:360px;height:500px;background:var(--color-secondary);border:1px solid var(--color-border);border-radius:18px;box-shadow:0 15px 40px rgba(0,0,0,.25);overflow:hidden;z-index:9998;opacity:0;visibility:hidden;transform:translateY(20px);transition:.35s ease;}
+.assistant-window.active{opacity:1;visibility:visible;transform:translateY(0);}
+.assistant-header{display:flex;justify-content:space-between;align-items:center;padding:18px;background:var(--color-primary);color:#fff;}
+.assistant-title{display:flex;align-items:center;gap:10px;font-weight:600;}
+.assistant-close{background:transparent;border:none;color:#fff;font-size:20px;cursor:pointer;}
+.assistant-body{padding:15px;height:350px;overflow-y:auto;}
+
+/* Footer chat */
+.assistant-footer{display:flex;align-items:center;gap:10px;padding:15px;border-top:1px solid var(--color-border);}
+.assistant-footer input{flex:1;padding:12px 15px;border:1px solid var(--color-border);border-radius:30px;background:var(--color-background);color:var(--color-text);outline:none;}
+.assistant-footer button{width:45px;height:45px;border:none;border-radius:50%;background:var(--color-primary);color:white;cursor:pointer;}
+
+/* Input asistente */
+.assistant-input{display:flex;gap:10px;margin-top:20px;}
+.assistant-input input{flex:1;padding:12px 15px;border:1px solid var(--color-border);border-radius:30px;background:var(--color-background);color:var(--color-text);outline:none;}
+.assistant-input button{width:48px;border:none;border-radius:50%;background:var(--color-primary);color:#fff;cursor:pointer;transition:.3s;}
+.assistant-input button:hover{transform:scale(1.08);}
+
+/* Chat asistente */
+.assistant-avatar{width:50px;height:50px;border-radius:50%;background:var(--color-primary);color:#fff;display:flex;justify-content:center;align-items:center;font-size:22px;flex-shrink:0;}
+.assistant-message{background:var(--color-primary);color:#fff;padding:12px 14px;border-radius:18px 18px 18px 6px;line-height:1.5;font-size:13px;max-width:280px;box-shadow:0 8px 20px rgba(0,0,0,.15);}
+
+/* Animación mensaje */
+@keyframes assistantMessage{from{opacity:0;transform:translateY(20px);}to{opacity:1;transform:translateY(0);}}
+.assistant-chat{animation:assistantMessage .45s ease;}
+
+/* Estado asistente */
+.assistant-title strong{font-size:15px;}
+.assistant-status{color:#7CFC90;font-size:12px;font-weight:500;}
+
+/* Mensaje usuario */
+.user-message{margin-top:20px;margin-left:auto;background:#25D366;color:white;padding:12px 16px;border-radius:18px 18px 5px 18px;max-width:75%;width:fit-content;font-size:13px;line-height:1.5;animation:assistantMessage .3s ease;}
+
+/* Indicador escritura */
+.typing-indicator{display:flex;gap:5px;padding:15px 20px;background:var(--color-primary);border-radius:18px;width:fit-content;margin-top:10px;opacity:0;animation:fadeIn .3s ease forwards;}
+.typing-indicator span{width:8px;height:8px;background:#fff;border-radius:50%;animation:bounce 1.4s infinite ease-in-out;}
+.typing-indicator span:nth-child(1){animation-delay:0s;}
+.typing-indicator span:nth-child(2){animation-delay:.2s;}
+.typing-indicator span:nth-child(3){animation-delay:.4s;}
+@keyframes bounce{0%,80%,100%{transform:translateY(0);}40%{transform:translateY(-10px);}}

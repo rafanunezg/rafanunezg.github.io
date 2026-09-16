@@ -1,0 +1,65 @@
+/*==================================================
+    VARIABLES.CSS
+==================================================*/
+:root{
+    /* Colores principales */
+    --color-primary:#00C9A7;
+    --color-primary-hover:#00E6BF;
+    --color-secondary:#1E1E1E;
+    --color-background:#111111;
+    --color-surface:#191919;
+    --color-card:#222222;
+    --color-border:#2E2E2E;
+    --color-text:#F5F5F5;
+    --color-text-light:#BBBBBB;
+    --color-title:#FFFFFF;
+    --color-danger:#ff4c60;
+    --color-warning:#FFB400;
+
+    /* Tipografía */
+    --font-main:'Poppins',sans-serif;
+
+    /* Tamaños */
+    --sidebar-width:300px;
+    --container-width:1200px;
+
+    /* Espaciados */
+    --space-xs:5px;
+    --space-sm:10px;
+    --space-md:20px;
+    --space-lg:35px;
+    --space-xl:50px;
+
+    /* Bordes */
+    --radius-small:6px;
+    --radius-medium:12px;
+    --radius-large:18px;
+    --radius-circle:50%;
+
+    /* Sombras */
+    --shadow-small:0 2px 8px rgba(0,0,0,.25);
+    --shadow-medium:0 10px 25px rgba(0,0,0,.35);
+    --shadow-large:0 20px 50px rgba(0,0,0,.45);
+
+    /* Transiciones */
+    --transition-fast:.2s;
+    --transition-normal:.35s;
+    --transition-slow:.6s;
+
+    /* Z-Index */
+    --z-sidebar:1000;
+    --z-menu:1200;
+    --z-modal:5000;
+}
+
+/* Modo claro */
+body.light-mode{
+    --color-background:#f5f5f5;
+    --color-secondary:#ffffff;
+    --color-surface:#ffffff;
+    --color-card:#ffffff;
+    --color-border:#dddddd;
+    --color-text:#222222;
+    --color-text-light:#555555;
+    --color-title:#111111;
+}

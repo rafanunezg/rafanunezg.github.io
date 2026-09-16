@@ -1,0 +1,12 @@
+# Archivos temporales del sistema
+Thumbs.db
+Desktop.ini
+*.tmp
+.DS_Store
+
+# Navegadores / editores
+.vscode/
+.idea/
+
+# Notas personales
+*.md.bak

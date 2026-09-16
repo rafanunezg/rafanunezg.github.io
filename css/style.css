@@ -1,0 +1,25 @@
+/*==================================================
+    STYLE.CSS
+    Archivo principal - Solo reset y contenedor
+==================================================*/
+@import url("variables.css");
+@import url("sidebar.css");
+@import url("content.css");
+@import url("sections.css");
+@import url("animations.css");
+@import url("responsive.css");
+
+/* Reset general */
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{font-family:'Poppins',sans-serif;background:#111111;color:#f2f2f2;overflow-x:hidden;}
+a{text-decoration:none;color:inherit;}
+ul{list-style:none;}
+img{max-width:100%;display:block;}
+
+/* Contenedor general */
+.container{display:flex;min-height:100vh;}
+
+/* Botón cambio de tema */
+.theme-btn{position:fixed;top:25px;right:30px;z-index:2000;padding:12px 22px;border:none;border-radius:30px;background:var(--color-primary);color:#111;font-size:15px;font-weight:600;cursor:pointer;transition:var(--transition-normal);}
+.theme-btn:hover{transform:translateY(-3px);background:var(--color-primary-hover);}
