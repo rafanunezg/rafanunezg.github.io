@@ -5,7 +5,6 @@
 /* Tablets / portátiles pequeños */
 @media (max-width:1200px){
     .content{padding:45px 35px;}
-    .hero-text h1{font-size:48px;}
     .hero-text h2{font-size:28px;}
 }
 
@@ -14,7 +13,6 @@
     .content{margin-left:0;width:100%;padding:40px 30px;}
     .container{flex-direction:column;}
     .hero{flex-direction:column-reverse;gap:40px;min-height:0;text-align:center;padding:30px 0;}
-    .hero-text h1{font-size:44px;}
     .hero-text p{margin-left:auto;margin-right:auto;}
     .hero-buttons{justify-content:center;}
     .hero-image img{width:280px;height:280px;}
@@ -37,7 +35,6 @@
 
 /* Móviles pequeños */
 @media (max-width:640px){
-    .hero-text h1{font-size:34px;}
     .hero-text h2{font-size:24px;}
     .hero-text h3{font-size:20px;}
     .hero-text p{font-size:15px;}
@@ -58,4 +55,9 @@
     .floating-contact{right:20px;bottom:20px;}
     .assistant-window{width:calc(100vw - 40px);right:20px;bottom:90px;height:460px;}
     .assistant-title strong{font-size:14px;}
+}
+
+/* Pantallas muy estrechas: mantiene el nombre en una línea sin desbordar */
+@media (max-width:360px){
+    .hero-text h1{font-size:clamp(22px,7vw,28px);}
 }
