@@ -5,7 +5,7 @@
 /* Tablets / portátiles pequeños */
 @media (max-width:1200px){
     .content{padding:45px 35px;}
-    .hero-text h1{font-size:54px;}
+    .hero-text h1{font-size:48px;}
     .hero-text h2{font-size:28px;}
 }
 
@@ -14,7 +14,7 @@
     .content{margin-left:0;width:100%;padding:40px 30px;}
     .container{flex-direction:column;}
     .hero{flex-direction:column-reverse;gap:40px;min-height:0;text-align:center;padding:30px 0;}
-    .hero-text h1{font-size:46px;}
+    .hero-text h1{font-size:44px;}
     .hero-text p{margin-left:auto;margin-right:auto;}
     .hero-buttons{justify-content:center;}
     .hero-image img{width:280px;height:280px;}
@@ -28,17 +28,16 @@
 /* Móviles grandes */
 @media (max-width:768px){
     .profile img{width:120px;height:120px;}
-    .profile h1{font-size:22px;margin-bottom:6px;}
+    .profile h1,.profile .profile-name{font-size:20px;margin-bottom:6px;}
     .content{padding:30px 20px;}
     .section h2{font-size:28px;}
-    #home h2{font-size:34px;}
     #home p{font-size:18px;}
     .theme-btn{top:15px;right:15px;padding:10px 16px;font-size:13px;}
 }
 
 /* Móviles pequeños */
 @media (max-width:640px){
-    .hero-text h1{font-size:36px;}
+    .hero-text h1{font-size:34px;}
     .hero-text h2{font-size:24px;}
     .hero-text h3{font-size:20px;}
     .hero-text p{font-size:15px;}

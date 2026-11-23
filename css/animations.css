@@ -9,7 +9,7 @@
 
 /* Aplicaciones */
 .profile img{animation:zoomIn 1s ease;}
-.profile h1,.profile span{animation:fadeIn 1.2s ease;}
+.profile h1,.profile .profile-name,.profile span{animation:fadeIn 1.2s ease;}
 .section{animation:fadeIn .8s ease;}
 .btn:hover{animation:floating .6s ease;}
 .hero-image{animation:zoomIn 1s ease;}

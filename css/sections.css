@@ -4,7 +4,7 @@
 
 /* HOME */
 #home{display:flex;align-items:center;justify-content:center;}
-#home h2{font-size:56px;margin-bottom:20px;}
+/* Se quitó el override #home h2 (56px) que agrandaba la línea de escritura y causaba el salto. Ahora usa .hero-text h2. */
 #home p{font-size:22px;max-width:700px;margin-bottom:30px;}
 
 /* ABOUT, RESUME, SKILLS, PORTFOLIO, CONTACT */
@@ -19,10 +19,13 @@
 =========================================*/
 .hero{display:flex;align-items:center;justify-content:space-between;gap:60px;min-height:80vh;}
 .hero-text{flex:1;}
-.hero-text h3{font-size:24px;color:var(--color-primary);margin-bottom:10px;}
-.hero-text h1{font-size:64px;color:var(--color-title);margin-bottom:15px;}
-.hero-text h2{font-size:32px;color:var(--color-text-light);margin-bottom:25px;min-height:40px;}
-.hero-text p{max-width:650px;font-size:16px;margin-bottom:35px;line-height:1.8;}
+.hero-text h3,.hero-text .hello{font-size:24px;color:var(--color-primary);margin-bottom:10px;}
+/* Nombre completo en dos líneas: tamaño controlado para que nunca se desborde */
+.hero-text h1{font-size:52px;color:var(--color-title);margin-bottom:12px;line-height:1.12;letter-spacing:-1.5px;}
+/* Altura fija de 2 líneas: el efecto de escritura nunca desplaza el contenido */
+.hero-text h2{font-size:32px;color:var(--color-text-light);margin-bottom:25px;height:2.9em;line-height:1.3;overflow:hidden;}
+/* #home p fija 22px por legacy; aquí se ajusta el párrafo del hero para equilibrar el bloque */
+#home .hero-text p:not(.hello){max-width:620px;font-size:18px;margin-bottom:35px;line-height:1.75;}
 .hero-buttons{display:flex;gap:20px;}
 .btn.secondary{background:transparent;border:2px solid var(--color-primary);color:var(--color-primary);}
 .btn.secondary:hover{background:var(--color-primary);color:#111;}

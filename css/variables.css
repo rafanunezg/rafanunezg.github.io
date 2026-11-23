@@ -54,6 +54,9 @@
 
 /* Modo claro */
 body.light-mode{
+    /* Texto de acento más oscuro para cumplir contraste sobre fondo claro */
+    --color-primary:#007A68;
+    --color-primary-hover:#008F7A;
     --color-background:#f5f5f5;
     --color-secondary:#ffffff;
     --color-surface:#ffffff;

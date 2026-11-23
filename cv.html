@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículum | Rafael Ángel Núñez García</title>
+    <meta name="description" content="Currículum profesional de Rafael Ángel Núñez García: ingeniería de sistemas, TI, seguridad electrónica y desarrollo web.">
+    <link rel="icon" type="image/jpeg" href="img/favicon.jpg">
+    <link rel="canonical" href="https://rafanunezg.github.io/cv.html">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <style>
+        :root {
+            --ink: #1c1c1c;
+            --muted: #555;
+            --line: #d8d8d8;
+            /* acento oscurecido para que todo el texto pequeño cumpla contraste AA */
+            --accent: #007a68;
+            --soft: #f2faf8;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            color: var(--ink);
+            background: #eceff1;
+            line-height: 1.55;
+            padding: 30px 15px;
+        }
+
+        .toolbar {
+            max-width: 900px;
+            margin: 0 auto 18px;
+            display: flex;
+            gap: 12px;
+            justify-content: flex-end;
+        }
+
+        .toolbar button, .toolbar a {
+            border: none;
+            border-radius: 8px;
+            padding: 11px 20px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            text-decoration: none;
+            background: var(--accent);
+            color: #fff;
+        }
+
+        .toolbar a { background: #fff; color: var(--accent); border: 1px solid var(--accent); }
+
+        .page {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 48px 55px;
+            box-shadow: 0 12px 35px rgba(0,0,0,.12);
+            border-radius: 6px;
+        }
+
+        header { border-bottom: 3px solid var(--accent); padding-bottom: 20px; margin-bottom: 26px; }
+        header h1 { font-size: 32px; letter-spacing: -.5px; }
+        header .role { color: var(--accent); font-size: 16px; font-weight: 600; margin-top: 4px; }
+        header .contact {
+            margin-top: 14px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px 22px;
+            font-size: 13px;
+            color: var(--muted);
+        }
+        header .contact span { display: inline-flex; align-items: center; gap: 6px; }
+        header .contact i { color: var(--accent); }
+
+        h2 {
+            font-size: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1.2px;
+            color: var(--accent);
+            margin: 26px 0 12px;
+            padding-bottom: 5px;
+            border-bottom: 1px solid var(--line);
+        }
+
+        p { font-size: 13.5px; color: #333; }
+
+        .profile { background: var(--soft); padding: 15px 18px; border-left: 4px solid var(--accent); border-radius: 0 6px 6px 0; }
+
+        .job { margin-bottom: 16px; }
+        .job-head { display: flex; justify-content: space-between; gap: 15px; flex-wrap: wrap; }
+        .job h3 { font-size: 15px; }
+        .job .date { font-size: 12.5px; color: var(--accent); font-weight: 600; }
+        .job .place { font-size: 12.5px; color: var(--muted); margin-bottom: 5px; }
+        .job ul { margin: 6px 0 0 18px; }
+        .job li { font-size: 13px; margin-bottom: 3px; }
+
+        .metrics { display: flex; flex-wrap: wrap; gap: 8px; margin: 8px 0; }
+        .metrics span { background: var(--soft); color: var(--accent); font-size: 12px; font-weight: 600; padding: 4px 10px; border-radius: 20px; }
+
+        .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
+        .skill-line { font-size: 13px; margin-bottom: 5px; }
+        .skill-line strong { color: var(--accent); }
+        .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+        .tags span { border: 1px solid var(--line); border-radius: 20px; padding: 3px 10px; font-size: 11.5px; color: var(--muted); }
+
+        .pending { color: #a05a00; font-size: 12px; font-style: italic; margin-top: 5px; }
+        .edu-place { font-size: 12.5px; color: var(--muted); margin-top: 5px; }
+        a { color: var(--accent); }
+
+        footer { margin-top: 28px; padding-top: 12px; border-top: 1px solid var(--line); font-size: 11.5px; color: var(--muted); display: flex; justify-content: space-between; }
+
+        @media print {
+            @page { size: A4; margin: 14mm; }
+            body { background: #fff; padding: 0; }
+            .toolbar { display: none !important; }
+            .page { box-shadow: none; padding: 0; border-radius: 0; max-width: none; }
+            h2 { margin-top: 18px; }
+            .job, .edu-item { break-inside: avoid; }
+            a { color: inherit; text-decoration: none; }
+        }
+
+        @media (max-width: 640px) {
+            .page { padding: 25px 20px; }
+            .two-col { grid-template-columns: 1fr; }
+            header h1 { font-size: 25px; }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="toolbar">
+        <button type="button" onclick="window.print()"><i class="fas fa-download"></i> Guardar como PDF</button>
+        <a href="index.html">← Volver al portafolio</a>
+    </div>
+
+    <main class="page">
+        <header>
+            <h1>Rafael Ángel Núñez García</h1>
+            <div class="role">Ingeniero de Sistemas · Especialista TI · Seguridad Electrónica · Desarrollo Web</div>
+            <div class="contact">
+                <span><i>✉</i> rafanunezgmex@gmail.com</span>
+                <span><i>☎</i> +52 566 755 3924</span>
+                <span><i>⌘</i> github.com/rafanunezg</span>
+                <span><i>◎</i> rafa_nunezg</span>
+                <span><i>🌐</i> rafanunezg.github.io</span>
+            </div>
+        </header>
+
+        <section>
+            <h2>Perfil profesional</h2>
+            <p class="profile">
+                Profesional de Ingeniería de Sistemas con experiencia en infraestructura tecnológica,
+                redes, seguridad electrónica, soporte TI y desarrollo web. Implementa, mantiene y
+                resuelve incidencias en entornos profesionales, integrando hardware, software e
+                infraestructura. En desarrollo web construye soluciones responsivas con HTML5, CSS3,
+                JavaScript, PHP, Python/Django y bases de datos MySQL/MariaDB.
+            </p>
+        </section>
+
+        <section>
+            <h2>Experiencia y proyectos</h2>
+
+            <div class="job">
+                <div class="job-head">
+                    <h3>Instituto Nacional de Rehabilitación “Luis Guillermo Ibarra Ibarra”</h3>
+                    <span class="date">Abril 2025 – Noviembre 2025</span>
+                </div>
+                <div class="place">Infraestructura tecnológica hospitalaria · Ciudad de México</div>
+                <div class="metrics">
+                    <span>150 cámaras IP MOBOTIX</span><span>45 nodos certificados</span>
+                    <span>500 bocinas de voceo</span><span>2 NAS QNAP</span><span>240 días</span>
+                </div>
+                <ul>
+                    <li>Implementación y modernización de videovigilancia IP, red de datos y sistema de voceo hospitalario.</li>
+                    <li>Canalización con tubería conduit de pared gruesa y cableado estructurado certificado para entorno hospitalario.</li>
+                    <li>Configuración de NAS QNAP para almacenamiento centralizado, políticas de grabación y administración de usuarios.</li>
+                    <li>Pruebas, validación y puesta en operación de todos los sistemas.</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <div class="job-head">
+                    <h3>Grupo Bimbo</h3>
+                    <span class="date">Noviembre 2025 – Diciembre 2025</span>
+                </div>
+                <div class="place">Sistema integral de seguridad electrónica · Jalisco</div>
+                <div class="metrics"><span>18 circuitos</span><span>4 técnicos</span><span>100% entregado</span></div>
+                <ul>
+                    <li>Diseño y distribución de puntos de videovigilancia para perímetros, patios y zonas de circulación.</li>
+                    <li>Instalación de cámaras Hikvision, XVR, control de acceso facial/biométrico y videoportero.</li>
+                    <li>Canalización EMT galvanizada, cajas de paso, soportería y sistema de puesta a tierra.</li>
+                    <li>Pruebas de cobertura, ajustes y entrega del sistema operativo.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Áreas de especialidad</h2>
+            <div class="two-col">
+                <div class="job">
+                    <h3>Ingeniería de Sistemas y Desarrollo Web</h3>
+                    <p>Soluciones tecnológicas, soporte, infraestructura, bases de datos y desarrollo de aplicaciones web.</p>
+                </div>
+                <div class="job">
+                    <h3>Seguridad Electrónica</h3>
+                    <p>CCTV IP y analógico, control de acceso, videoporteros y alarmas.</p>
+                </div>
+                <div class="job">
+                    <h3>Infraestructura Tecnológica</h3>
+                    <p>Redes, cableado estructurado, almacenamiento NAS y soporte empresarial.</p>
+                </div>
+                <div class="job">
+                    <h3>Soporte TI</h3>
+                    <p>Diagnóstico de hardware y software, mantenimiento preventivo y correctivo, atención a usuarios.</p>
+                </div>
+            </div>
+            <p class="pending">TODO: añadir nombres de empleadores y periodos de las áreas de especialidad si aplica.</p>
+        </section>
+
+        <section>
+            <h2>Formación y certificaciones</h2>
+            <div class="two-col">
+                <div class="edu-item">
+                    <h3>Ingeniería de Sistemas</h3>
+                    <p>Formación académica en sistemas, redes, bases de datos y desarrollo de software.</p>
+                    <!-- TODO: añadir el año de graduación cuando Rafael lo confirme -->
+                    <p class="edu-place">Instituto Politécnico Santiago Mariño, Venezuela · <a href="https://www.psm.edu.ve/" target="_blank" rel="noopener">psm.edu.ve</a></p>
+                </div>
+                <div class="edu-item">
+                    <h3>Certificaciones</h3>
+                    <p>Constancias y certificados disponibles en el repositorio público de documentos.</p>
+                    <p class="pending">TODO: listar los certificados más relevantes (nombre y año).</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Habilidades técnicas</h2>
+            <div class="two-col">
+                <div>
+                    <p class="skill-line"><strong>Infraestructura y redes:</strong> cableado estructurado, nodos certificados, QNAP, servidores</p>
+                    <p class="skill-line"><strong>Seguridad:</strong> Hikvision, MOBOTIX, Hanwha Vision, NVR/DVR, control de acceso</p>
+                    <p class="skill-line"><strong>Soporte:</strong> diagnóstico, mantenimiento, configuración y documentación</p>
+                </div>
+                <div>
+                    <p class="skill-line"><strong>Desarrollo web:</strong> maquetación responsiva, accesibilidad, SEO técnico</p>
+                    <div class="tags">
+                        <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>PHP</span>
+                        <span>Python</span><span>Django</span><span>MySQL</span><span>MariaDB</span>
+                        <span>Bootstrap</span><span>Git</span><span>GitHub</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Enlaces</h2>
+            <p>Portafolio en vivo: <strong>rafanunezg.github.io</strong> · Código: <strong>github.com/rafanunezg</strong>.</p>
+            <p>Aplicaciones web desarrolladas: <strong>ralpsolucionesintegrales.com</strong> (sitio corporativo con Odoo ERP e infraestructura TI) y <strong>ovrisd.com</strong> (plataforma institucional con banco de talento y contenido).</p>
+            <p>Certificados: disponibles en Google Drive (enlace en el portafolio).</p>
+        </section>
+
+        <footer>
+            <span>Rafael Ángel Núñez García · Currículum actualizado en 2026</span>
+            <span>Generado desde el portafolio web</span>
+        </footer>
+    </main>
+</body>
+
+</html>

@@ -2,1713 +2,596 @@
 <html lang="es">
 
 <head>
-
-    <!-- =====================
-         CONFIGURACIÓN GENERAL
-    ====================== -->
-
+    <!-- ===================== CONFIGURACIÓN GENERAL ===================== -->
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
-    <!-- TÍTULO Y METADATOS -->
-
-    <title>Rafael Nuñez | Especialista TI & Ingeniería de Sistemas</title>
-
+    <title>Rafael Ángel Núñez García | Ingeniero de Sistemas, TI & Desarrollo Web</title>
     <link rel="icon" type="image/jpeg" href="img/favicon.jpg">
-
-    <meta name="description" content="Portafolio profesional de Rafael Angel Nuñez García. Especialista en Ingeniería de Sistemas, seguridad electrónica, redes, CCTV, infraestructura TI y desarrollo web.">
-
-    <meta name="author" content="Rafael Angel Nuñez Garcia">
-
+    <meta name="description"
+        content="Portafolio profesional de Rafael Ángel Núñez García. Ingeniería de sistemas, infraestructura TI, seguridad electrónica y desarrollo web (HTML, CSS, JavaScript, PHP, Python/Django).">
+    <meta name="author" content="Rafael Ángel Núñez García">
     <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://rafanunezg.github.io/">
 
-    <!-- Open Graph -->
+    <!-- Open Graph (rutas absolutas para WhatsApp, LinkedIn, Twitter…) -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Rafael Nuñez | Especialista TI & Ingeniería de Sistemas">
-    <meta property="og:description" content="Portafolio profesional de Rafael Angel Nuñez García. Ingeniería de Sistemas, TI, seguridad electrónica y desarrollo web.">
-    <meta property="og:image" content="img/profile2.jpg">
+    <meta property="og:site_name" content="Rafael Ángel Núñez García | Portafolio Profesional">
+    <meta property="og:url" content="https://rafanunezg.github.io/">
+    <meta property="og:title" content="Rafael Ángel Núñez García | Ingeniero de Sistemas & Desarrollo Web">
+    <meta property="og:description"
+        content="Infraestructura TI, redes, seguridad electrónica y desarrollo web. Conoce mi trayectoria, proyectos y habilidades.">
+    <meta property="og:image" content="https://rafanunezg.github.io/img/profile2.jpg">
     <meta property="og:locale" content="es_MX">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Rafael Nuñez | Especialista TI">
-    <meta name="twitter:description" content="Portafolio profesional de Rafael Angel Nuñez García. Ingeniería de Sistemas, TI y seguridad electrónica.">
-    <meta name="twitter:image" content="img/profile2.jpg">
+    <meta name="twitter:title" content="Rafael Ángel Núñez García | Ingeniero de Sistemas & Desarrollo Web">
+    <meta name="twitter:description" content="Portafolio profesional: TI, seguridad electrónica y desarrollo web.">
+    <meta name="twitter:image" content="https://rafanunezg.github.io/img/profile2.jpg">
 
-    <!-- Tema oscuro por defecto -->
     <meta name="theme-color" content="#0b0b0b">
 
+    <!-- Datos estructurados para buscadores -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Rafael Ángel Núñez García",
+        "alternateName": "Rafael Núñez",
+        "url": "https://rafanunezg.github.io/",
+        "image": "https://rafanunezg.github.io/img/profile2.jpg",
+        "jobTitle": "Ingeniero de Sistemas | Especialista TI y Desarrollo Web",
+        "description": "Profesional de ingeniería de sistemas con experiencia en infraestructura tecnológica, redes, seguridad electrónica y desarrollo web.",
+        "email": "mailto:rafanunezgmex@gmail.com",
+        "telephone": "+52 566 755 3924",
+        "address": { "@type": "PostalAddress", "addressCountry": "MX" },
+        "sameAs": [
+            "https://github.com/rafanunezg",
+            "https://www.instagram.com/rafa_nunezg/",
+            "https://wa.me/525667553924"
+        ],
+        "knowsAbout": [
+            "Ingeniería de Sistemas",
+            "Redes y cableado estructurado",
+            "Seguridad electrónica y CCTV",
+            "Almacenamiento NAS",
+            "Soporte TI",
+            "Desarrollo web",
+            "HTML5", "CSS3", "JavaScript", "PHP", "Python", "Django", "MySQL", "MariaDB"
+        ]
+    }
+    </script>
 
-
-    <!-- =====================
-         GOOGLE FONTS
-    ====================== -->
-
+    <!-- Fuentes e iconos -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap"
         rel="stylesheet">
-
-
-
-    <!-- =====================
-         FONT AWESOME ICONOS
-    ====================== -->
-
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-
-
-
-    <!-- =====================
-         ARCHIVO PRINCIPAL CSS
-    ====================== -->
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
-
-
 </head>
 
-
-
 <body>
-
-
-    <!-- =====================
-         BOTÓN CAMBIO DE TEMA
-         Claro / Oscuro
-    ====================== -->
-
-    <button id="theme-toggle" class="theme-btn" aria-label="Cambiar tema claro/oscuro">
-        ☀️ Claro
-    </button>
-
-
-
-
-    <!-- =====================
-         CONTENEDOR PRINCIPAL
-         Sidebar + Contenido
-    ====================== -->
+    <button id="theme-toggle" class="theme-btn" aria-label="Cambiar tema claro/oscuro">☀️ Claro</button>
 
     <div class="container">
 
-
-
-
-
-        <!-- =====================
-             SIDEBAR LATERAL
-        ====================== -->
-
+        <!-- ===================== SIDEBAR ===================== -->
         <aside class="sidebar">
-
-
-
-            <!-- =====================
-                 PERFIL DEL USUARIO
-            ====================== -->
-
             <div class="profile">
-
-
-                <!-- Imagen de perfil -->
-
-                <img src="img/profile.jpg" alt="Foto de perfil de Rafael Nuñez">
-
-
-                <!-- Nombre -->
-
-                <h1>
-                    Rafael Angel Nuñez Garcia
-                </h1>
-
-
-
-                <!-- Profesión -->
-
-                <span>
-                    Ingeniería de Sistemas | TI & Seguridad Electrónica
-                </span>
-
-
-
-
-                <!-- =====================
-                     REDES SOCIALES
-                ====================== -->
+                <img src="img/profile.jpg" alt="Fotografía de perfil de Rafael Ángel Núñez García">
+                <span>Ingeniería de Sistemas · TI · Seguridad Electrónica · Desarrollo Web</span>
+                <div class="availability"><span class="dot"></span> Abierto a nuevas oportunidades</div>
 
                 <div class="social-links">
-
-
-                    <a href="https://www.instagram.com/rafa_nunezg/" target="_blank" aria-label="Perfil de Instagram">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-
-
-                    <a href="https://github.com/rafanunezg" target="_blank" aria-label="Perfil de GitHub">
+                    <!-- TODO: añadir tu URL de LinkedIn cuando la tengas -->
+                    <a href="https://github.com/rafanunezg" target="_blank" rel="noopener" aria-label="Perfil de GitHub">
                         <i class="fab fa-github"></i>
                     </a>
-
-
-                    <a href="https://wa.me/525667553924" target="_blank" aria-label="Contactar por WhatsApp">
+                    <a href="https://www.instagram.com/rafa_nunezg/" target="_blank" rel="noopener" aria-label="Perfil de Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://wa.me/525667553924" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
                         <i class="fab fa-whatsapp"></i>
                     </a>
-
-
                     <a href="mailto:rafanunezgmex@gmail.com" aria-label="Enviar correo electrónico">
                         <i class="fas fa-envelope"></i>
                     </a>
-
-
                 </div>
-
-
-
             </div>
 
-
-
-
-
-            <!-- =====================
-                 MENÚ DE NAVEGACIÓN
-                 Secciones del CV
-            ====================== -->
-
-
-            <nav>
-
-
+            <nav aria-label="Navegación principal">
                 <ul>
-
-
-                    <li>
-
-                        <a href="#home">
-
-                            <i class="fas fa-home"></i>
-
-                            Inicio
-
-                        </a>
-
-                    </li>
-
-
-
-
-                    <li>
-
-                        <a href="#about">
-
-                            <i class="fas fa-user"></i>
-
-                            Sobre mí
-
-                        </a>
-
-                    </li>
-
-
-
-
-                    <li>
-
-                        <a href="#resume">
-
-                            <i class="fas fa-file-alt"></i>
-
-                            Currículum
-
-                        </a>
-
-                    </li>
-
-
-
-
-                    <li>
-
-                        <a href="#skills">
-
-                            <i class="fas fa-cogs"></i>
-
-                            Habilidades
-
-                        </a>
-
-                    </li>
-
-
-
-
-                    <li>
-
-                        <a href="#portfolio">
-
-                            <i class="fas fa-briefcase"></i>
-
-                            Portafolio
-
-                        </a>
-
-                    </li>
-
-
-
-
-                    <li>
-
-                        <a href="#projects">
-
-                            <i class="fas fa-folder-open"></i>
-
-                            Proyectos
-
-                        </a>
-
-                    </li>
-
-
-
-
-                    <li>
-
-                        <a href="#contact">
-
-                            <i class="fas fa-envelope"></i>
-
-                            Contacto
-
-                        </a>
-
-                    </li>
-
-
+                    <li><a href="#home"><i class="fas fa-home"></i> Inicio</a></li>
+                    <li><a href="#about"><i class="fas fa-user"></i> Sobre mí</a></li>
+                    <li><a href="#resume"><i class="fas fa-briefcase"></i> Trayectoria</a></li>
+                    <li><a href="#education"><i class="fas fa-graduation-cap"></i> Formación</a></li>
+                    <li><a href="#skills"><i class="fas fa-cogs"></i> Habilidades</a></li>
+                    <li><a href="#web"><i class="fas fa-code"></i> Desarrollo Web</a></li>
+                    <li><a href="#portfolio"><i class="fas fa-layer-group"></i> Portafolio</a></li>
+                    <li><a href="#projects"><i class="fas fa-folder-open"></i> Proyectos</a></li>
+                    <li><a href="#contact"><i class="fas fa-envelope"></i> Contacto</a></li>
                 </ul>
-
-
             </nav>
-
-
-
-
         </aside>
 
-
-        <!-- =====================
-             CONTENIDO PRINCIPAL
-        ====================== -->
-
+        <!-- ===================== CONTENIDO ===================== -->
         <main class="content">
 
-
-
-
-
-            <!-- =====================
-                 SECCIÓN INICIO
-                 Presentación principal
-            ====================== -->
-
-
+            <!-- INICIO -->
             <section id="home" class="section">
-
-
                 <div class="hero">
-
-
-
-                    <!-- Texto principal -->
-
                     <div class="hero-text">
-
-
-                        <h3>
-                            Hola, soy
-                        </h3>
-
-
-
-                        <h1>
-                            Rafael Nuñez
-                        </h1>
-
-
-
-                        <!-- Texto animado desde main.js -->
-
-                        <h2>
-                            <span id="typing"></span>
-                        </h2>
-
-
-
-
+                        <p class="hello">Hola, soy</p>
+                        <h1>Rafael Ángel<br>Núñez García</h1>
+                        <h2><span id="typing">Desarrollo Web</span></h2>
                         <p>
-                            Bienvenido a mi portafolio profesional.
-                            Aquí encontrarás mi experiencia,
-                            habilidades y proyectos desarrollados.
+                            Construyo soluciones tecnológicas de principio a fin: desarrollos web
+                            responsivos, infraestructura de redes y sistemas de seguridad
+                            electrónica. Este portafolio es una muestra de ese trabajo.
                         </p>
-
-
-
-
-                        <!-- Botones principales -->
-
                         <div class="hero-buttons">
-
-
-                            <a href="https://drive.google.com/uc?export=download&id=1XO7tgHdvLIBDi76mfgC3GtUitpDzYV_U" target="_blank" rel="noopener" class="btn">
-
-                                <i class="fas fa-download"></i>
-                                Descargar CV
-
-                            </a>
-
-
-                            <a href="https://drive.google.com/file/d/17sK9xHjBnIZw8R0FyewHaPBZi58UP4zH/view" target="_blank" rel="noopener" class="btn secondary">
-
-                                <i class="fas fa-certificate"></i>
-                                Certificados
-
-                            </a>
-
-
-
+                            <a href="cv.html" class="btn"><i class="fas fa-file-pdf"></i> Ver CV</a>
+                            <a href="https://drive.google.com/file/d/17sK9xHjBnIZw8R0FyewHaPBZi58UP4zH/view"
+                                target="_blank" rel="noopener" class="btn secondary"><i class="fas fa-certificate"></i> Certificados</a>
+                            <a href="#projects" class="btn ghost"><i class="fas fa-folder-open"></i> Proyectos</a>
                         </div>
-
-
-
+                        <div class="hero-stats">
+                            <div><strong>150</strong><span>Cámaras IP instaladas</span></div>
+                            <div><strong>45</strong><span>Nodos de red certificados</span></div>
+                            <div><strong>500</strong><span>Bocinas hospitalarias</span></div>
+                        </div>
                     </div>
-
-
-
-
-
-
-                    <!-- Imagen principal -->
-
                     <div class="hero-image">
-
-
-                        <img src="img/profile2.jpg" alt="Rafael Nuñez - Portrait">
-
-
+                        <img src="img/profile2.jpg" alt="Retrato de Rafael Ángel Núñez García">
                     </div>
-
-
-
                 </div>
-
-
             </section>
 
-
-
-
-
-
-
-
-            <!-- =====================
-                 SECCIÓN SOBRE MÍ
-                 Perfil profesional
-            ====================== -->
-
-
+            <!-- SOBRE MÍ -->
             <section id="about" class="section">
-
-
                 <div class="content-wrapper">
-
-
-                    <h2>
-                        Sobre mí
-                    </h2>
-
-
-
-
-                    <div class="card about-card">
-
-
+                    <h2>Sobre mí</h2>
+                    <div class="card about-card reveal">
                         <p>
-
-                            Profesional de Ingeniería de Sistemas con experiencia en infraestructura tecnológica, redes, seguridad electrónica y soporte TI. Enfocado en la implementación, mantenimiento y solución de problemas tecnológicos en entornos profesionales. Cuento con experiencia en sistemas de videovigilancia, cableado estructurado, servidores, almacenamiento NAS, redes empresariales y desarrollo de soluciones web, integrando conocimientos de hardware, software e infraestructura para atender necesidades tecnológicas de manera eficiente.
-
-
+                            Profesional de Ingeniería de Sistemas con experiencia en infraestructura
+                            tecnológica, redes, seguridad electrónica, soporte TI y desarrollo web.
+                            Me enfoco en implementar, mantener y resolver problemas tecnológicos
+                            en entornos profesionales, integrando hardware, software e
+                            infraestructura para atender necesidades reales de negocio.
                         </p>
-
-
-
+                        <p>
+                            En el área web diseño y construyo sitios y aplicaciones con HTML5,
+                            CSS3 y JavaScript, además de trabajar con PHP, Python/Django y
+                            bases de datos MySQL/MariaDB. Me interesa especialmente que cada
+                            solución sea usable, rápida, accesible y fácil de mantener.
+                        </p>
+                        <div class="tag-row">
+                            <span class="tag"><i class="fas fa-check"></i> Infraestructura TI</span>
+                            <span class="tag"><i class="fas fa-check"></i> Seguridad electrónica</span>
+                            <span class="tag"><i class="fas fa-check"></i> Desarrollo web</span>
+                        </div>
                     </div>
-
-
-
                 </div>
-
-
             </section>
 
-
-
-
-
-
-
-
-            <!-- =====================
-                 SECCIÓN CURRÍCULUM
-                 Experiencia profesional
-            ====================== -->
-
-
+            <!-- TRAYECTORIA -->
             <section id="resume" class="section">
-
-
-
                 <div class="content-wrapper">
+                    <h2>Trayectoria</h2>
+                    <p class="section-description">Proyectos y áreas de especialidad con resultados concretos.</p>
 
-
-                    <h2>
-                        Experiencia Profesional
-                    </h2>
-
-
-
-
+                    <h3 class="subheading">Proyectos destacados</h3>
                     <div class="timeline">
-
-
-
-
-
-
-                        <!-- Experiencia 1 -->
-
-                        <div class="timeline-item">
-
-
+                        <div class="timeline-item reveal">
                             <div class="timeline-dot"></div>
-
-
-
                             <div class="timeline-content">
-
-
-                                <h3>
-                                    Ingeniería de Sistemas
-                                </h3>
-
-
-
-                                <span>
-                                    Desarrollo de soluciones tecnológicas · Soporte TI · Infraestructura · Redes
-                                </span>
-
-
-
+                                <span class="timeline-date"><i class="fas fa-calendar-alt"></i> Abril 2025 – Noviembre 2025</span>
+                                <h3>Instituto Nacional de Rehabilitación “Luis Guillermo Ibarra Ibarra”</h3>
+                                <span class="timeline-role">Infraestructura tecnológica hospitalaria · CDMX</span>
+                                <div class="metric-row">
+                                    <span><strong>150</strong> cámaras IP</span>
+                                    <span><strong>45</strong> nodos</span>
+                                    <span><strong>500</strong> bocinas</span>
+                                    <span><strong>2</strong> NAS QNAP</span>
+                                </div>
                                 <p>
-
-                                    Experiencia en desarrollo de soluciones tecnológicas, soporte de sistemas, infraestructura de TI, redes y bases de datos, orientada a resolver necesidades operativas y mejorar procesos mediante herramientas tecnológicas.
-
+                                    Implementación y modernización de videovigilancia IP, red de datos,
+                                    voceo hospitalario y almacenamiento centralizado, con canalización
+                                    y cableado estructurado certificado para un entorno hospitalario.
                                 </p>
-
-
+                                <a href="proyecto_inr.html" class="timeline-link">Ver caso completo <i class="fas fa-arrow-right"></i></a>
                             </div>
-
-
                         </div>
 
-
-
-
-
-
-
-
-                        <!-- Experiencia 2 -->
-
-                        <div class="timeline-item">
-
-
+                        <div class="timeline-item reveal">
                             <div class="timeline-dot"></div>
-
-
-
                             <div class="timeline-content">
-
-
-                                <h3>
-                                    Especialista en Seguridad Electrónica
-                                </h3>
-
-
-
-                                <span>
-                                    CCTV · Control de Acceso · Videoporteros · Alarmas
-                                </span>
-
-
-
+                                <span class="timeline-date"><i class="fas fa-calendar-alt"></i> Noviembre 2025 – Diciembre 2025</span>
+                                <h3>Grupo Bimbo</h3>
+                                <span class="timeline-role">Sistema integral de seguridad electrónica · Jalisco</span>
+                                <div class="metric-row">
+                                    <span><strong>18</strong> circuitos</span>
+                                    <span><strong>4</strong> técnicos</span>
+                                    <span><strong>100%</strong> entregado</span>
+                                </div>
                                 <p>
-
-                                   Experiencia en instalación, configuración, puesta en operación y soporte de sistemas de seguridad electrónica, incluyendo videovigilancia IP y analógica, control de acceso, videoporteros y soluciones de alarma.
-
+                                    Diseño e instalación de videovigilancia, control de acceso, alarmas
+                                    y videoportero: canalización, cableado, configuración y puesta en
+                                    operación para mejorar cobertura y supervisión de áreas estratégicas.
                                 </p>
-
-
+                                <a href="proyecto_bimbo.html" class="timeline-link">Ver caso completo <i class="fas fa-arrow-right"></i></a>
                             </div>
-
-
                         </div>
-
-
-
-
-
-
-
-
-                        <!-- Experiencia 3 -->
-
-                        <div class="timeline-item">
-
-
-                            <div class="timeline-dot"></div>
-
-
-
-                            <div class="timeline-content">
-
-
-                                <h3>
-                                    Infraestructura Tecnológica
-                                </h3>
-
-
-
-                                <span>
-                                    Redes · Cableado Estructurado · NAS · Soporte
-                                </span>
-
-
-
-                                <p>
-
-                                    Experiencia en implementación y soporte de infraestructura tecnológica, incluyendo redes, cableado estructurado, almacenamiento NAS, configuración de equipos y atención de requerimientos técnicos en entornos empresariales.
-
-                                </p>
-
-
-                            </div>
-
-
-                        </div>
-
-
-
-
-
                     </div>
 
-
-
+                    <h3 class="subheading">Áreas de especialidad</h3>
+                    <!-- TODO: si tienes empleadores y periodos concretos para estas áreas, añádelos aquí -->
+                    <div class="timeline timeline-compact">
+                        <div class="timeline-item reveal">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h3>Ingeniería de Sistemas y Desarrollo Web</h3>
+                                <span>Diseño de soluciones · Soporte TI · Bases de datos · Web</span>
+                                <p>
+                                    Desarrollo de soluciones tecnológicas, soporte de sistemas e
+                                    infraestructura, con construcción de interfaces, lógica de
+                                    aplicación y bases de datos para optimizar procesos operativos.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="timeline-item reveal">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h3>Especialista en Seguridad Electrónica</h3>
+                                <span>CCTV · Control de acceso · Videoporteros · Alarmas</span>
+                                <p>
+                                    Instalación, configuración, puesta en operación y soporte de sistemas
+                                    de seguridad electrónica, incluyendo videovigilancia IP y analógica,
+                                    control de acceso, videoporteros y soluciones de alarma.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="timeline-item reveal">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h3>Infraestructura Tecnológica</h3>
+                                <span>Redes · Cableado estructurado · NAS · Soporte</span>
+                                <p>
+                                    Implementación y soporte de redes, cableado estructurado,
+                                    almacenamiento NAS, configuración de equipos y atención de
+                                    requerimientos técnicos en entornos empresariales.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-
-
             </section>
 
+            <!-- FORMACIÓN -->
+            <section id="education" class="section">
+                <div class="content-wrapper">
+                    <h2>Formación</h2>
+                    <div class="edu-grid">
+                        <div class="card edu-card reveal">
+                            <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+                            <h3>Ingeniería de Sistemas</h3>
+                            <span>Formación académica</span>
+                            <p>
+                                Formación orientada al diseño, implementación y mantenimiento de
+                                sistemas tecnológicos: redes, sistemas, bases de datos y desarrollo
+                                de software.
+                            </p>
+                            <!-- TODO: añadir el año de graduación cuando Rafael lo confirme -->
+                            <p class="edu-place">
+                                <i class="fas fa-university" aria-hidden="true"></i>
+                                Instituto Politécnico Santiago Mariño, Venezuela
+                                <a href="https://www.psm.edu.ve/" target="_blank" rel="noopener" class="inline-link" aria-label="Sitio web del Instituto Politécnico Santiago Mariño (se abre en una pestaña nueva)">psm.edu.ve <i class="fas fa-external-link-alt" aria-hidden="true"></i></a>
+                            </p>
+                        </div>
+                        <div class="card edu-card reveal">
+                            <div class="edu-icon"><i class="fas fa-certificate"></i></div>
+                            <h3>Certificaciones</h3>
+                            <span>Formación complementaria</span>
+                            <p>
+                                Certificaciones y constancias de formación técnica disponibles
+                                en el repositorio público de documentos.
+                            </p>
+                            <a href="https://drive.google.com/file/d/17sK9xHjBnIZw8R0FyewHaPBZi58UP4zH/view"
+                                target="_blank" rel="noopener" class="inline-link">Ver certificados <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                        <div class="card edu-card reveal">
+                            <div class="edu-icon"><i class="fas fa-book-open"></i></div>
+                            <h3>Formación continua</h3>
+                            <span>Actualización permanente</span>
+                            <p>
+                                Mantención de conocimientos en infraestructura, videovigilancia,
+                                almacenamiento y desarrollo web, aplicando lo aprendido en
+                                proyectos reales.
+                            </p>
+                            <a href="https://github.com/rafanunezg" target="_blank" rel="noopener" class="inline-link">Ver actividad en GitHub <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-
-
-
-
-
-
-
-            <!-- =====================
-                 SECCIÓN HABILIDADES
-                 Competencias técnicas
-            ====================== -->
-
-
+            <!-- HABILIDADES -->
             <section id="skills" class="section">
-
-
-
                 <div class="content-wrapper">
-
-
-                    <h2>
-                        Habilidades
-                    </h2>
-
-
-
-
+                    <h2>Habilidades</h2>
                     <p class="section-description">
-
-                        Habilidades técnicas desarrolladas
-                        a través de experiencia en infraestructura,
-                        seguridad electrónica, redes y desarrollo
-                        de soluciones tecnológicas.
-
+                        Niveles orientativos basados en experiencia práctica; la evidencia está
+                        en la sección de proyectos.
                     </p>
-
-
-
-
-
                     <div class="skills-container">
-
-
-
-
-
-
-                        <!-- Habilidad 1 -->
-
-                        <div class="skill">
-
-
-                            <div class="skill-info">
-
-
-                                <span>
-                                    Redes e Infraestructura
-                                </span>
-
-
-
-                                <span>
-                                    90%
-                                </span>
-
-
-                            </div>
-
-
-
-
-                            <div class="skill-bar">
-
-
-                                <div class="skill-progress" style="width:90%"></div>
-
-
-                            </div>
-
-
-                        </div>
-
-
-
-
-
-
-
-
-                        <!-- Habilidad 2 -->
-
-                        <div class="skill">
-
-
-                            <div class="skill-info">
-
-
-                                <span>
-                                    CCTV y Seguridad Electrónica
-                                </span>
-
-
-
-                                <span>
-                                    90%
-                                </span>
-
-
-                            </div>
-
-
-
-
-                            <div class="skill-bar">
-
-
-                                <div class="skill-progress" style="width:90%"></div>
-
-
-                            </div>
-
-
-                        </div>
-
-
-
-
-
-
-
-
-                        <!-- Habilidad 3 -->
-
-                        <div class="skill">
-
-
-                            <div class="skill-info">
-
-
-                                <span>
-                                    Soporte TI
-                                </span>
-
-
-
-                                <span>
-                                    85%
-                                </span>
-
-
-                            </div>
-
-
-
-
-                            <div class="skill-bar">
-
-
-                                <div class="skill-progress" style="width:85%"></div>
-
-
-                            </div>
-
-
-                        </div>
-
-
-
-
-                        <!-- Habilidad 4 -->
-
-                        <div class="skill">
-
-
-                            <div class="skill-info">
-
-
-                                <span>
-                                    Administración de Sistemas
-                                </span>
-
-
-
-                                <span>
-                                    80%
-                                </span>
-
-
-                            </div>
-
-
-
-
-                            <div class="skill-bar">
-
-
-                                <div class="skill-progress" style="width:80%"></div>
-
-
-                            </div>
-
-
-                        </div>
-
-
-
-
-                        <!-- Habilidad 4 -->
-
-                        <div class="skill">
-
-
-                            <div class="skill-info">
-
-
-                                <span>
-                                    Base de Datos
-                                </span>
-
-
-
-                                <span>
-                                    75%
-                                </span>
-
-
-                            </div>
-
-
-
-
-                            <div class="skill-bar">
-
-
-                                <div class="skill-progress" style="width:75%"></div>
-
-
-                            </div>
-
-
-                        </div>
-
-
-
-                        <!-- Habilidad 5 -->
-
-                        <div class="skill">
-
-
-                            <div class="skill-info">
-
-
-                                <span>
-                                    Desarrollo Web
-                                </span>
-
-
-
-                                <span>
-                                    75%
-                                </span>
-
-
-                            </div>
-
-
-
-
-                            <div class="skill-bar">
-
-
-                                <div class="skill-progress" style="width:75%"></div>
-
-
-                            </div>
-
-
-                        </div>
-
-
-
-                        <!-- Habilidad 6 -->
-
-                        <div class="skill">
-
-
-                            <div class="skill-info">
-
-
-                                <span>
-                                    Python / Django
-                                </span>
-
-
-
-                                <span>
-                                    70%
-                                </span>
-
-
-                            </div>
-
-
-
-
-                            <div class="skill-bar">
-
-
-                                <div class="skill-progress" style="width:70%"></div>
-
-
-                            </div>
-
-
-                        </div>
-
-
-
-                        <!-- Habilidad 6-->
-
-                        <div class="skill">
-
-
-                            <div class="skill-info">
-
-
-                                <span>
-                                    Diseños e Implementación de Soluciones TI
-                                </span>
-
-
-
-                                <span>
-                                    80%
-                                </span>
-
-
-                            </div>
-
-
-
-
-                            <div class="skill-bar">
-
-
-                                <div class="skill-progress" style="width:80%"></div>
-
-
-                            </div>
-
-
-                        </div>
-
-
-
-
-
+                        <div class="skill"><div class="skill-info"><span>Redes e Infraestructura</span><span>90%</span></div><div class="skill-bar"><div class="skill-progress" style="width:90%"></div></div></div>
+                        <div class="skill"><div class="skill-info"><span>CCTV y Seguridad Electrónica</span><span>90%</span></div><div class="skill-bar"><div class="skill-progress" style="width:90%"></div></div></div>
+                        <div class="skill"><div class="skill-info"><span>Soporte TI</span><span>85%</span></div><div class="skill-bar"><div class="skill-progress" style="width:85%"></div></div></div>
+                        <div class="skill"><div class="skill-info"><span>Administración de Sistemas</span><span>80%</span></div><div class="skill-bar"><div class="skill-progress" style="width:80%"></div></div></div>
+                        <div class="skill"><div class="skill-info"><span>Diseño e implementación de soluciones TI</span><span>80%</span></div><div class="skill-bar"><div class="skill-progress" style="width:80%"></div></div></div>
+                        <div class="skill"><div class="skill-info"><span>Base de Datos</span><span>75%</span></div><div class="skill-bar"><div class="skill-progress" style="width:75%"></div></div></div>
+                        <div class="skill"><div class="skill-info"><span>Desarrollo Web</span><span>75%</span></div><div class="skill-bar"><div class="skill-progress" style="width:75%"></div></div></div>
+                        <div class="skill"><div class="skill-info"><span>Python / Django</span><span>70%</span></div><div class="skill-bar"><div class="skill-progress" style="width:70%"></div></div></div>
+                        <div class="skill"><div class="skill-info"><span>Git y control de versiones</span><span>70%</span></div><div class="skill-bar"><div class="skill-progress" style="width:70%"></div></div></div>
                     </div>
-
-
-
+                    <div class="tech-cloud reveal">
+                        <h3 class="subheading">Stack técnico</h3>
+                        <div class="chips">
+                            <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>PHP</span>
+                            <span>Python</span><span>Django</span><span>MySQL</span><span>MariaDB</span>
+                            <span>Bootstrap</span><span>Git</span><span>GitHub</span><span>SEO</span>
+                            <span>Hikvision</span><span>MOBOTIX</span><span>Hanwha Vision</span><span>QNAP</span>
+                        </div>
+                    </div>
                 </div>
-
-
-
             </section>
 
-            <!-- =====================
-                 SECCIÓN PORTAFOLIO
-                 Áreas de conocimiento
-            ====================== -->
+            <!-- DESARROLLO WEB (sección destacada) -->
+            <section id="web" class="section web-section">
+                <div class="content-wrapper">
+                    <h2>Desarrollo Web</h2>
+                    <p class="section-description">
+                        Además de la infraestructura física, diseño y construyo experiencias digitales
+                        completas: maquetación responsiva, interactividad, bases de datos y despliegue.
+                    </p>
 
+                    <div class="web-showcase">
+                        <div class="card web-feature reveal">
+                            <span class="eyebrow"><i class="fas fa-star"></i> Proyecto en vivo</span>
+                            <h3>Este portafolio es mi demo</h3>
+                            <p>
+                                Cada sección que estás viendo fue construida desde cero con
+                                tecnologías web estándar, sin frameworks pesados.
+                            </p>
+                            <ul class="feature-list">
+                                <li><i class="fas fa-check-circle"></i> HTML5 semántico y accesible</li>
+                                <li><i class="fas fa-check-circle"></i> CSS modular con variables y modo claro/oscuro</li>
+                                <li><i class="fas fa-check-circle"></i> JavaScript vanilla: typing, scroll spy, chat y lightbox</li>
+                                <li><i class="fas fa-check-circle"></i> Diseño responsive y mobile-first</li>
+                                <li><i class="fas fa-check-circle"></i> SEO técnico: metadatos, canonical y JSON-LD</li>
+                            </ul>
+                            <div class="web-actions">
+                                <a href="https://github.com/rafanunezg" target="_blank" rel="noopener" class="btn btn-sm"><i class="fab fa-github"></i> Ver código</a>
+                                <a href="cv.html" class="btn btn-sm secondary"><i class="fas fa-file-pdf"></i> Ver CV</a>
+                            </div>
+                        </div>
 
+                        <div class="code-window reveal" aria-label="Ejemplo de código">
+                            <div class="code-header">
+                                <span class="dots"><i></i><i></i><i></i></span>
+                                <span>portafolio / seccion-web.html</span>
+                                <i class="fab fa-html5"></i>
+                            </div>
+                            <pre><code><span class="c-tag">&lt;section</span> <span class="c-attr">id</span>=<span class="c-str">"web"</span> <span class="c-tag">&gt;</span>
+  <span class="c-tag">&lt;h2&gt;</span>Desarrollo Web<span class="c-tag">&lt;/h2&gt;</span>
+  <span class="c-tag">&lt;p&gt;</span>HTML5 · CSS3 · JavaScript<span class="c-tag">&lt;/p&gt;</span>
+  <span class="c-tag">&lt;ul&gt;</span>
+    <span class="c-tag">&lt;li&gt;</span>Responsive<span class="c-tag">&lt;/li&gt;</span>
+    <span class="c-tag">&lt;li&gt;</span>Accesible<span class="c-tag">&lt;/li&gt;</span>
+    <span class="c-tag">&lt;li&gt;</span>Rápido<span class="c-tag">&lt;/li&gt;</span>
+  <span class="c-tag">&lt;/ul&gt;</span>
+<span class="c-tag">&lt;/section&gt;</span></code></pre>
+                        </div>
+                    </div>
+
+                    <h3 class="subheading">Aplicaciones web desarrolladas</h3>
+                    <div class="web-projects">
+                        <a class="web-project-card reveal" href="https://ralpsolucionesintegrales.com/" target="_blank" rel="noopener">
+                            <div class="web-project-thumb">
+                                <img src="img/proyectos/web/ralp.webp" alt="Vista previa del sitio RALP Soluciones Integrales" loading="lazy" decoding="async">
+                                <span class="web-project-badge"><i class="fas fa-arrow-up-right-from-square"></i> Sitio en vivo</span>
+                            </div>
+                            <div class="web-project-body">
+                                <span class="web-project-tag">Sitio corporativo · Odoo ERP · Infraestructura</span>
+                                <h4>RALP Soluciones Integrales</h4>
+                                <p>Sitio web corporativo para una empresa de tecnología: infraestructura TI, redes, seguridad electrónica, desarrollo a medida e implementación de Odoo ERP, con formulario de cotización y canales de contacto directos.</p>
+                                <span class="web-project-link">Visitar sitio <i class="fas fa-arrow-right"></i></span>
+                            </div>
+                        </a>
+
+                        <a class="web-project-card reveal" href="https://www.ovrisd.com/" target="_blank" rel="noopener">
+                            <div class="web-project-thumb">
+                                <img src="img/proyectos/web/ovrisd.webp" alt="Vista previa del sitio de la Organización Venezolana para la Reforma de Seguridad y Defensa" loading="lazy" decoding="async">
+                                <span class="web-project-badge"><i class="fas fa-arrow-up-right-from-square"></i> Sitio en vivo</span>
+                            </div>
+                            <div class="web-project-body">
+                                <span class="web-project-tag">Plataforma institucional · Banco de talento · Contenido</span>
+                                <h4>OVRISD · Reforma de Seguridad y Defensa</h4>
+                                <p>Plataforma web institucional con misión, objetivos y valores, alianzas, comunicados, videoteca y banco de talento con más de 600 profesionales inscritos, además de registro de usuarios y sistema de comentarios.</p>
+                                <span class="web-project-link">Visitar sitio <i class="fas fa-arrow-right"></i></span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <h3 class="subheading">Lo que puedo construir</h3>
+                    <div class="service-grid">
+                        <div class="card service-card reveal">
+                            <div class="portfolio-icon"><i class="fas fa-globe"></i></div>
+                            <h3>Sitios corporativos y portafolios</h3>
+                            <p>Páginas rápidas, responsivas y optimizadas para buscadores, con identidad visual propia.</p>
+                        </div>
+                        <div class="card service-card reveal">
+                            <div class="portfolio-icon"><i class="fas fa-database"></i></div>
+                            <h3>Aplicaciones y paneles administrativos</h3>
+                            <p>CRUD, autenticación, reportes y conexión con MySQL/MariaDB o Django.</p>
+                        </div>
+                        <div class="card service-card reveal">
+                            <div class="portfolio-icon"><i class="fas fa-plug"></i></div>
+                            <h3>Integraciones y mantenimiento</h3>
+                            <p>Conexión con APIs, mejoras de rendimiento, corrección de bugs y evolución de sistemas existentes.</p>
+                        </div>
+                    </div>
+
+                    <h3 class="subheading">Cómo trabajo</h3>
+                    <div class="workflow">
+                        <div class="step reveal"><span>01</span><strong>Requisitos</strong><small>Entiendo el objetivo y el público</small></div>
+                        <div class="step reveal"><span>02</span><strong>Diseño</strong><small>Estructura, contenido y maquetación</small></div>
+                        <div class="step reveal"><span>03</span><strong>Desarrollo</strong><small>Front-end, back-end y base de datos</small></div>
+                        <div class="step reveal"><span>04</span><strong>Entrega</strong><small>Pruebas, despliegue y documentación</small></div>
+                    </div>
+
+                    <div class="web-cta reveal">
+                        <p><strong>¿Tienes una idea en mente?</strong> Convirtámosla en una solución web.</p>
+                        <a href="https://wa.me/525667553924?text=Hola%20Rafael%2C%20me%20gustar%C3%ADa%20hablar%20de%20un%20proyecto%20web"
+                            target="_blank" rel="noopener" class="btn"><i class="fab fa-whatsapp"></i> Hablemos de tu proyecto</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- PORTAFOLIO -->
             <section id="portfolio" class="section">
-
-
                 <div class="content-wrapper">
-
-
-                    <h2>
-                        Portafolio
-                    </h2>
-
-
-
-                    <p class="section-description">
-
-                        Proyectos tecnológicos desarrollados
-                        en infraestructura, seguridad electrónica,
-                        redes y soluciones digitales.
-
-                    </p>
-
-
-
-
+                    <h2>Portafolio</h2>
+                    <p class="section-description">Áreas de conocimiento y soluciones desarrolladas.</p>
                     <div class="portfolio-grid">
-
-
-
-
-
-                        <!-- Proyecto Portafolio 1 -->
-
-                        <div class="portfolio-item">
-
-
-                            <div class="portfolio-icon">
-
-                                <i class="fas fa-video"></i>
-
-                            </div>
-
-
-
-                            <h3>
-                                Sistemas CCTV
-                            </h3>
-
-
-
-                            <p>
-
-                               Implementación, instalación y configuración de sistemas de videovigilancia IP y analógicos. Experiencia con soluciones de fabricantes como Hikvision, Hanwha Vision y Mobotix, incluyendo configuración de cámaras, NVR/DVR, monitoreo y puesta en operación de sistemas de seguridad.
-
-                            </p>
-
-
+                        <div class="portfolio-item reveal">
+                            <div class="portfolio-icon"><i class="fas fa-video"></i></div>
+                            <h3>Sistemas CCTV</h3>
+                            <p>Implementación y configuración de videovigilancia IP y analógica con Hikvision, Hanwha Vision y MOBOTIX: cámaras, NVR/DVR, monitoreo y puesta en operación.</p>
                         </div>
-
-
-
-
-
-
-
-                        <!-- Proyecto Portafolio 2 -->
-
-                        <div class="portfolio-item">
-
-
-                            <div class="portfolio-icon">
-
-                                <i class="fas fa-network-wired"></i>
-
-                            </div>
-
-
-
-                            <h3>
-                                Infraestructura de Redes
-                            </h3>
-
-
-
-                            <p>
-
-                                Implementación y soporte de infraestructura de redes, incluyendo cableado estructurado, canalización, conectividad y configuración de equipos de red. Experiencia en instalación, diagnóstico y puesta en operación de redes para entornos empresariales.
-
-                            </p>
-
-
+                        <div class="portfolio-item reveal">
+                            <div class="portfolio-icon"><i class="fas fa-network-wired"></i></div>
+                            <h3>Infraestructura de Redes</h3>
+                            <p>Cableado estructurado, canalización, conectividad y configuración de equipos. Instalación, diagnóstico y puesta en operación de redes empresariales.</p>
                         </div>
-
-
-
-
-
-
-
-                        <!-- Proyecto Portafolio 3 -->
-
-                        <div class="portfolio-item">
-
-
-                            <div class="portfolio-icon">
-
-                                <i class="fas fa-server"></i>
-
-                            </div>
-
-
-
-                            <h3>
-                                Servidores y NAS
-                            </h3>
-
-
-
-                            <p>
-
-                               Configuración y administración de soluciones de almacenamiento NAS, principalmente QNAP, orientadas a la gestión de archivos, almacenamiento centralizado y respaldo de información. Implementación y soporte de soluciones de almacenamiento para entornos empresariales.
-
-                            </p>
-
-
+                        <div class="portfolio-item reveal">
+                            <div class="portfolio-icon"><i class="fas fa-server"></i></div>
+                            <h3>Servidores y NAS</h3>
+                            <p>Configuración y administración de almacenamiento NAS, principalmente QNAP, para gestión de archivos, respaldo y almacenamiento centralizado.</p>
                         </div>
-
-
-
-
-
-
-
-                        <!-- Proyecto Portafolio 4 -->
-
-                        <div class="portfolio-item">
-
-
-                            <div class="portfolio-icon">
-
-                                <i class="fas fa-code"></i>
-
-                            </div>
-
-
-
-                            <h3>
-                                Desarrollo Web
-                            </h3>
-
-
-
-                            <p>
-
-                                Desarrollo de aplicaciones y soluciones web orientadas a las necesidades de negocio, integrando interfaces, lógica de aplicación y bases de datos. Experiencia con PHP, Python, Django, MySQL/MariaDB, HTML, CSS y Bootstrap.
-
-                            </p>
-
-
+                        <div class="portfolio-item reveal">
+                            <div class="portfolio-icon"><i class="fas fa-code"></i></div>
+                            <h3>Desarrollo Web</h3>
+                            <p>Sitios y aplicaciones web con HTML5, CSS3, JavaScript, PHP, Python/Django y MySQL/MariaDB. Este portafolio es un ejemplo en vivo de mi trabajo.</p>
+                            <a href="#web" class="inline-link">Explorar desarrollo web <i class="fas fa-arrow-right"></i></a>
                         </div>
-
-
-
-                        <!-- Proyecto Portafolio 5-->
-
-                        <div class="portfolio-item">
-
-
-                           <div class="portfolio-icon">
-
-                                    <i class="fas fa-tools"></i>
-
-                            </div>
-
-
-
-                            <h3>
-                                Soporte TI
-                            </h3>
-
-
-
-                            <p>
-
-                               Diagnóstico y resolución de incidencias de hardware y software, mantenimiento preventivo y correctivo, configuración de equipos y soporte a usuarios en entornos empresariales.
-
-                            </p>
-
-
+                        <div class="portfolio-item reveal">
+                            <div class="portfolio-icon"><i class="fas fa-tools"></i></div>
+                            <h3>Soporte TI</h3>
+                            <p>Diagnóstico y resolución de incidencias de hardware y software, mantenimiento preventivo y correctivo, y soporte a usuarios.</p>
                         </div>
-
-
-
-
-                        <!-- Proyecto Portafolio 5-->
-
-                        <div class="portfolio-item">
-
-
-                            <div class="portfolio-icon">
-
-                                <i class="fas fa-shield-alt"></i>
-
-                            </div>
-
-
-
-                            <h3>
-                                Seguridad Electronica
-                            </h3>
-
-
-
-                            <p>
-
-                              Implementación y soporte de soluciones de seguridad electrónica, incluyendo control de acceso, alarmas, videoporteros y sistemas integrados de videovigilancia.
-
-                            </p>
-
-
+                        <div class="portfolio-item reveal">
+                            <div class="portfolio-icon"><i class="fas fa-shield-alt"></i></div>
+                            <h3>Seguridad Electrónica</h3>
+                            <p>Control de acceso, alarmas, videoporteros y sistemas integrados de videovigilancia para entornos industriales y hospitalarios.</p>
                         </div>
-
-
-
-                        
-
-
-
-
-
                     </div>
-
-
                 </div>
-
-
             </section>
 
-
-
-
-
-
-
-
-
-            <!-- =====================
-                 SECCIÓN PROYECTOS
-                 Casos reales con galería
-            ====================== -->
-
-
+            <!-- PROYECTOS -->
             <section id="projects" class="section">
-
-
                 <div class="content-wrapper">
-
-
-                    <h2>
-                        Proyectos
-                    </h2>
-
-
-
-                    <p class="section-description">
-
-                        Proyectos tecnológicos desarrollados e implementados en diferentes entornos profesionales. A continuación, se presenta una selección de los proyectos más recientes y relevantes de mi trayectoria profesional.
-
-                    </p>
-
-
-
-
-
+                    <h2>Proyectos</h2>
+                    <p class="section-description">Casos reales con alcance, cifras y evidencia fotográfica.</p>
                     <div class="portfolio-grid">
-
-
-
-
-
-
-                        <!-- Proyecto 1 -->
-
-                        <div class="portfolio-item">
-
-
-                            <div class="portfolio-icon">
-
-                               <i class="fas fa-video"></i>
-
-                            </div>
-
-
-
-                            <h3>
-                                Sistema Integral de Seguridad Electrónica para Bimbo
-                            </h3>
-
-
-
-                            <p>
-
-                                Implementación de una solución integral de videovigilancia para las instalaciones de Bimbo, incluyendo distribución estratégica de cámaras, infraestructura de canalización y cableado, instalación y configuración de equipos, y puesta en operación del sistema para mejorar la cobertura, visibilidad y supervisión de áreas estratégicas.
-
-                            </p>
-
-
-
-                            <a href="proyecto_bimbo.html" class="project-button">
-
-                                <i class="fas fa-images"></i>
-
-                                Ver galería
-
-                            </a>
-
-
+                        <div class="portfolio-item reveal">
+                            <div class="portfolio-icon"><i class="fas fa-hospital"></i></div>
+                            <span class="project-date">Abril – Noviembre 2025</span>
+                            <h3>Instituto Nacional de Rehabilitación “Luis Guillermo Ibarra Ibarra”</h3>
+                            <p>Modernización tecnológica hospitalaria: 150 cámaras IP MOBOTIX, 45 nodos certificados, 500 bocinas de voceo y 2 servidores NAS QNAP.</p>
+                            <div class="chips small"><span>CCTV</span><span>Redes</span><span>Voceo</span><span>NAS</span></div>
+                            <a href="proyecto_inr.html" class="project-button"><i class="fas fa-images"></i> Ver galería</a>
                         </div>
-
-
-
-
-
-
-
-
-                        <!-- Proyecto 2 -->
-
-                        <div class="portfolio-item">
-
-
-                            <div class="portfolio-icon">
-
-                                <i class="fas fa-hospital"></i>
-
-                            </div>
-
-
-
-                            <h3>
-                                Implementación de Soluciones Tecnológicas para Centro Médico
-                            </h3>
-
-
-
-                            <p>
-
-                              Implementación de soluciones tecnológicas orientadas a fortalecer la seguridad, infraestructura y operación del centro médico, mediante la instalación y configuración de sistemas tecnológicos adaptados a las necesidades de la institución.
-
-                            </p>
-
-
-
-                            <a href="proyecto_inr.html" class="project-button">
-
-                                <i class="fas fa-images"></i>
-
-                                Ver galería
-
-                            </a>
-
-
+                        <div class="portfolio-item reveal">
+                            <div class="portfolio-icon"><i class="fas fa-industry"></i></div>
+                            <span class="project-date">Noviembre – Diciembre 2025</span>
+                            <h3>Sistema Integral de Seguridad Electrónica para Grupo Bimbo</h3>
+                            <p>Videovigilancia, control de acceso facial y biométrico, alarmas y videoportero: 18 circuitos y 100% del sistema entregado.</p>
+                            <div class="chips small"><span>Videovigilancia</span><span>Control de acceso</span><span>Cableado</span></div>
+                            <a href="proyecto_bimbo.html" class="project-button"><i class="fas fa-images"></i> Ver galería</a>
                         </div>
-
-
-
-
                     </div>
-
-
-
                 </div>
-
-
-
             </section>
 
-
-
-
-
-
-
-
-
-            <!-- =====================
-                 SECCIÓN CONTACTO
-                 Datos de comunicación
-            ====================== -->
-
-
+            <!-- CONTACTO -->
             <section id="contact" class="section">
-
-
                 <div class="content-wrapper">
-
-
-                    <h2>
-                        Contacto
-                    </h2>
-
-
-
-                    <p class="section-description">
-
-                        Si deseas conocer más sobre mi experiencia
-                        profesional, proyectos o servicios tecnológicos,
-                        puedes contactarme.
-
-                    </p>
-
-
-
-
-
+                    <h2>Contacto</h2>
+                    <p class="section-description">¿Necesitas desarrollar una solución web o fortalecer tu infraestructura TI? Hablemos.</p>
                     <div class="contact-container">
-
-
-
-
-
-
-                        <!-- Email -->
-
-                        <div class="contact-item">
-
-
-                            <i class="fas fa-envelope"></i>
-
-
-
-                            <div>
-
-                                <h3>
-                                    Email
-                                </h3>
-
-
-                                <p>
-                                    rafanunezgmex@gmail.com
-                                </p>
-
-
-                            </div>
-
-
-                        </div>
-
-
-
-
-
-
-
-                        <!-- Teléfono -->
-
-                        <div class="contact-item">
-
-
-                            <i class="fas fa-phone"></i>
-
-
-
-                            <div>
-
-                                <h3>
-                                    Teléfono
-                                </h3>
-
-
-                                <p>
-                                    +52 566 755 3924
-                                </p>
-
-
-                            </div>
-
-
-                        </div>
-
-
-
-
-
-
-
-                        <!-- Instagram -->
-
-                        <div class="contact-item">
-
-
-                            <i class="fab fa-instagram"></i>
-
-
-
-                            <div>
-
-                                <h3>
-                                    Instagram
-                                </h3>
-
-
-                                <p>
-                                    rafa_nunezg
-                                </p>
-
-
-                            </div>
-
-
-                        </div>
-
-
-
-
-
+                        <div class="contact-item reveal"><i class="fas fa-envelope"></i><div><h3>Email</h3><p>rafanunezgmex@gmail.com</p></div></div>
+                        <div class="contact-item reveal"><i class="fas fa-phone"></i><div><h3>Teléfono / WhatsApp</h3><p>+52 566 755 3924</p></div></div>
+                        <div class="contact-item reveal"><i class="fab fa-github"></i><div><h3>GitHub</h3><p>github.com/rafanunezg</p></div></div>
+                        <div class="contact-item reveal"><i class="fab fa-instagram"></i><div><h3>Instagram</h3><p>rafa_nunezg</p></div></div>
+                        <div class="contact-item reveal"><i class="fas fa-file-pdf"></i><div><h3>Currículum</h3><p><a href="cv.html" class="inline-link">Ver CV imprimible</a> · <a href="https://drive.google.com/uc?export=download&id=1XO7tgHdvLIBDi76mfgC3GtUitpDzYV_U" target="_blank" rel="noopener" class="inline-link">Descargar PDF</a></p></div></div>
                     </div>
-
-
-
-
+                    <div class="web-cta reveal">
+                        <p><strong>Respuesta rápida:</strong> escríbeme por WhatsApp y cuéntame qué necesitas.</p>
+                        <a href="https://wa.me/525667553924" target="_blank" rel="noopener" class="btn"><i class="fab fa-whatsapp"></i> Enviar mensaje</a>
+                    </div>
                 </div>
-
-
-
             </section>
 
-
-
-
-
-
+            <footer class="site-footer">
+                <p>© <span id="year">2026</span> Rafael Ángel Núñez García · Hecho con HTML5, CSS3 y JavaScript.</p>
+                <a href="#home"><i class="fas fa-arrow-up"></i> Volver arriba</a>
+            </footer>
         </main>
-
-
-
     </div>
 
-
-<!-- =====================
-     MENÚ FLOTANTE
-====================== -->
-
-<div class="floating-contact">
-
-    <!-- Botón principal -->
-
-    <button class="floating-main" aria-label="Menú de contacto">
-
-        <i class="fas fa-comments"></i>
-
-    </button>
-
-    <!-- Menú -->
-
-    <div class="floating-menu">
-
-        <a href="#" class="menu-item">
-            <i class="fas fa-robot"></i>
-            Asistente Virtual
-        </a>
-
-        <a href="https://wa.me/525667553924" target="_blank" class="menu-item">
-            <i class="fab fa-whatsapp"></i>
-            WhatsApp
-        </a>
-       
-
-        <a href="https://github.com/rafanunezg" target="_blank" class="menu-item">
-            <i class="fab fa-github"></i>
-            GitHub
-        </a>
-
+    <!-- MENÚ FLOTANTE -->
+    <div class="floating-contact">
+        <button class="floating-main" aria-label="Abrir menú de contacto"><i class="fas fa-comments"></i></button>
+        <div class="floating-menu">
+            <a href="#" class="menu-item"><i class="fas fa-robot"></i> Asistente Virtual</a>
+            <a href="https://wa.me/525667553924" target="_blank" rel="noopener" class="menu-item"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+            <a href="cv.html" class="menu-item"><i class="fas fa-file-pdf"></i> Ver CV</a>
+            <a href="https://github.com/rafanunezg" target="_blank" rel="noopener" class="menu-item"><i class="fab fa-github"></i> GitHub</a>
+        </div>
     </div>
 
-</div>
-
-
-
-<!-- =====================
-     ASISTENTE VIRTUAL
-====================== -->
-
-<!-- ==================================================
-     ASISTENTE VIRTUAL FRIDA
-================================================== -->
-
-
-<div class="assistant-window">
-
-
-    <!-- ==========================
-         CABECERA DEL ASISTENTE
-    =========================== -->
-
-    <div class="assistant-header">
-
-
-        <div class="assistant-title">
-
-
-            <i class="fas fa-robot"></i>
-
-
-            <div>
-
-                <strong>Frida</strong>
-
-                <br>
-
-                <small class="assistant-status">
-                    ● En línea
-                </small>
-
+    <!-- ASISTENTE VIRTUAL -->
+    <div class="assistant-window" role="dialog" aria-label="Asistente virtual Frida">
+        <div class="assistant-header">
+            <div class="assistant-title">
+                <i class="fas fa-robot"></i>
+                <div><strong>Frida</strong><br><small class="assistant-status">● En línea</small></div>
             </div>
-
-
+            <button class="assistant-close" aria-label="Cerrar asistente"><i class="fas fa-times"></i></button>
         </div>
-
-
-
-        <!-- BOTÓN CERRAR -->
-
-        <button class="assistant-close" aria-label="Cerrar asistente">
-
-            <i class="fas fa-times"></i>
-
-        </button>
-
-
-    </div>
-
-
-
-    <!-- ==========================
-         CUERPO DEL CHAT
-    =========================== -->
-
-
-    <div id="assistant-body" class="assistant-body">
-
-
-        <!-- MENSAJE INICIAL DE FRIDA -->
-
-
-        <div class="assistant-message">
-
-
-            👋 Hola, soy Frida, asistente virtual del portafolio profesional de Rafael Ángel Núñez.
-
-
-            <br><br>
-
-
-            Puedo ayudarte a conocer su experiencia, proyectos, habilidades y formas de contacto.
-
-
+        <div id="assistant-body" class="assistant-body" aria-live="polite">
+            <div class="assistant-message">
+                👋 Hola, soy Frida, asistente virtual del portafolio de Rafael Ángel Núñez García.
+                <br><br>
+                Puedo ayudarte a conocer su experiencia, proyectos, habilidades, desarrollo web y formas de contacto.
+            </div>
+            <div class="quick-questions">
+                <button type="button" data-question="Cuéntame de tus proyectos">Proyectos</button>
+                <button type="button" data-question="Háblame de desarrollo web">Desarrollo web</button>
+                <button type="button" data-question="¿Cómo te contacto?">Contacto</button>
+            </div>
         </div>
-
-
+        <div class="assistant-footer">
+            <input type="text" id="assistant-input" placeholder="Escribe una pregunta..." aria-label="Escribe una pregunta">
+            <button id="assistant-send" aria-label="Enviar mensaje"><i class="fas fa-paper-plane"></i></button>
+        </div>
     </div>
 
-
-
-
-    <!-- ==========================
-         ESCRIBIR MENSAJE
-    =========================== -->
-
-
-    <div class="assistant-footer">
-
-
-        <input 
-            type="text"
-            id="assistant-input"
-            placeholder="Escribe una pregunta..."
-        >
-
-
-
-        <button id="assistant-send">
-
-
-            <i class="fas fa-paper-plane"></i>
-
-
-        </button>
-
-
-    </div>
-
-
-
-</div>
-
-
-
-
-
-
-    <!-- =====================
-         ARCHIVO JAVASCRIPT
-    ====================== -->
-
+    <button id="backToTop" class="back-to-top" aria-label="Volver al inicio"><i class="fas fa-arrow-up"></i></button>
 
     <script src="js/main.js" defer></script>
-
-
-
 </body>
-
 
 </html>

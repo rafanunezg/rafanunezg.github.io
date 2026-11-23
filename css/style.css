@@ -8,6 +8,7 @@
 @import url("sections.css");
 @import url("animations.css");
 @import url("responsive.css");
+@import url("enhancements.css");
 
 /* Reset general */
 *{margin:0;padding:0;box-sizing:border-box;}
